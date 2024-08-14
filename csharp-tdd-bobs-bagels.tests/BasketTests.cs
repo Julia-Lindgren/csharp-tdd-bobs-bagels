@@ -47,7 +47,7 @@ public class Tests
     {
         Basket basket = new Basket();
 
-        Assert.IsTrue(basket.BasketSize == 5);
+        Assert.IsTrue(basket.BasketSize == 2);
     }
 
     [Test]
