@@ -14,5 +14,10 @@ namespace bobsBagels.Main
         {
             bagels.Add(bagel);
         }
+
+        public void RemoveBagel(string bagel)
+        {
+            bagels.Remove(bagel);
+        }
     }
 }
