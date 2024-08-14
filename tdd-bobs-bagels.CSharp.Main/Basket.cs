@@ -20,5 +20,6 @@ namespace bobsBagels.Main
         {
             Bagels.Remove(bagel);
         }
+
     }
 }

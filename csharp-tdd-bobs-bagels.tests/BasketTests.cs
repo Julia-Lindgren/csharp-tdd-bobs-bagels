@@ -41,4 +41,12 @@ public class Tests
 
         Assert.IsTrue(basket.Bagels.Count() == 1);
     }
+
+    [Test]
+    public void GetBasketSize()
+    {
+        Basket basket = new Basket();
+
+        Assert.IsTrue(basket.BasketSize == 5);
+    }
 }
