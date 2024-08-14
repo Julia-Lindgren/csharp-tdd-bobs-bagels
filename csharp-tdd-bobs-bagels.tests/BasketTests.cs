@@ -83,4 +83,12 @@ public class Tests
 
         Assert.IsTrue(basket.BasketSize == 5);
     }
+
+    [Test]
+    public void RemoveNonexistent()
+    {
+        Basket basket = new Basket();
+
+        Assert.IsTrue(basket.RemoveBagel("Ham and cheese") == false);
+    }
 }
