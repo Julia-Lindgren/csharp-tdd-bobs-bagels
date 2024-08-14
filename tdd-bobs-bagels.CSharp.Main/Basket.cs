@@ -8,16 +8,17 @@ namespace bobsBagels.Main
 {
     public class Basket
     {
-        public List<String> bagels = new List<String>();
+
+        public List<String> Bagels { get; set; } = new List<String>();
 
         public void AddBagel(string bagel)
         {
-            bagels.Add(bagel);
+            Bagels.Add(bagel);
         }
 
         public void RemoveBagel(string bagel)
         {
-            bagels.Remove(bagel);
+            Bagels.Remove(bagel);
         }
     }
 }
