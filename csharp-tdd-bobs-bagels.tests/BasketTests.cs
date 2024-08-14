@@ -49,4 +49,28 @@ public class Tests
 
         Assert.IsTrue(basket.BasketSize == 5);
     }
+
+    [Test]
+    public void AddBagelWhenFull()
+    {
+        Basket basket = new Basket();
+
+        basket.AddBagel("Cream cheese");
+        basket.AddBagel("Salmon");
+        basket.AddBagel("Cheese");
+
+        Assert.IsTrue(basket.BasketSize == 2);
+    }
+
+    [Test]
+    public void BasketIsFull()
+    {
+        Basket basket = new Basket();
+
+        basket.AddBagel("Cream cheese");
+        basket.AddBagel("Salmon");
+        basket.AddBagel("Cheese");
+
+        Assert.IsTrue(basket.BasketIsFull);
+    }
 }
