@@ -19,4 +19,16 @@ public class Tests
 
         Assert.IsTrue(basket.bagels.Count() == 2);
     }
+
+    [Test]
+    public void RemoveBagel()
+    {
+        Basket basket = new Basket();
+        basket.AddBagel("Cream cheese");
+        basket.AddBagel("Salmon");
+
+        basket.RemoveBagel("Salmon");
+
+        Assert.IsTrue(basket.bagels.Count() == 1);
+    }
 }
