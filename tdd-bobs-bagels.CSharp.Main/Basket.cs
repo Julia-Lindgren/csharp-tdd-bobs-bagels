@@ -10,6 +10,7 @@ namespace bobsBagels.Main
     {
 
         public List<String> Bagels { get; set; } = new List<String>();
+        public int BasketSize { get; set; } = 5; //Max amount of bagels
 
         public void AddBagel(string bagel)
         {
