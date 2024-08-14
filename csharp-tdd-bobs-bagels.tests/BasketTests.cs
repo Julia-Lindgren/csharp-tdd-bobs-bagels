@@ -73,4 +73,14 @@ public class Tests
 
         Assert.IsTrue(basket.BasketIsFull);
     }
+
+    [Test]
+    public void ChangeBasketSize()
+    {
+        Basket basket = new Basket();
+
+        basket.BasketSize = 5;
+
+        Assert.IsTrue(basket.BasketSize == 5);
+    }
 }
