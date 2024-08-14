@@ -21,9 +21,15 @@ namespace bobsBagels.Main
                     BasketIsFull = true;
         }
 
-        public void RemoveBagel(string bagel)
+        public bool RemoveBagel(string bagel)
         {
-            Bagels.Remove(bagel);
+            if (Bagels.Contains(bagel))
+            {
+                Bagels.Remove(bagel);
+                return true;
+            }
+
+            return false;
         }
 
     }
